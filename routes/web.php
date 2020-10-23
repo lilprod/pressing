@@ -95,6 +95,10 @@ Route::post('/postDateLivraison', 'DepositController@postDateLivraison')->name('
 
 Route::resource('licences', 'LicenceController');
 
+Route::resource('loyalgroups', 'LoyalGroupController');
+
+Route::resource('clientgroups', 'ClientGroupController');
+
 Route::resource('status', 'StatusController');
 
 Route::resource('users', 'UserController');

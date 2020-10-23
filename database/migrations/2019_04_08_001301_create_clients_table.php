@@ -20,6 +20,7 @@ class CreateClientsTable extends Migration
             $table->mediumText('address');
             $table->string('profile_picture')->nullable();
             $table->integer('user_id');
+            $table->float('discount')->nullable();
             $table->timestamps();
         });
     }

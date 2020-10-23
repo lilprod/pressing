@@ -146,7 +146,7 @@
                     <div class="col-lg-3">
                       <div class="form-group">
                           <label for="discount">Remise</label>
-                          <input class="form-control" id="nbre" name="discount" type="number" value="" min="0" max="100">
+                          <input class="form-control" id="nbre" name="discount" type="number" value="{{$customer->discount}}" min="0" max="100">
                       </div>
                     </div>
 

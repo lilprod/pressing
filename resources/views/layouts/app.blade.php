@@ -399,6 +399,34 @@
 
         <li class="treeview">
           <a href="#">
+            <i class="fa fa-plus"></i>
+            <span>Clients Fidèles</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('clientgroups.create') }}"><i class="fa fa-circle-o"></i> Fidéliser Client</a></li>
+            <li><a href="{{ route('clientgroups.index') }}"><i class="fa fa-circle-o"></i> Liste des clients fidèles</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-plus"></i>
+            <span>Groupes de Fidelisation</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('loyalgroups.create') }}"><i class="fa fa-circle-o"></i> Ajouter Groupe</a></li>
+            <li><a href="{{ route('loyalgroups.index') }}"><i class="fa fa-circle-o"></i> Liste des groupes</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-cart-arrow-down"></i>
             <span>Gestion des Dépôts</span>
             <span class="pull-right-container">
@@ -632,7 +660,7 @@
 <!-- AdminLTE App -->
 <script src="{{asset('/dist/js/adminlte.min.js') }}"></script>
 
-
+@stack('rate')
 @stack('js')
 @stack('scriptdelivery')
 @stack('etat')
@@ -647,5 +675,7 @@
 @stack('getcustomer')
 @stack('codesuffixe')
 @stack('deliveryhour')
+@stack('loyalgroup')
+@stack('clientgroup')
 </body>
 </html>

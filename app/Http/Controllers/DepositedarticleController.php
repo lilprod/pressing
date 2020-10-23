@@ -158,6 +158,8 @@ class DepositedarticleController extends Controller
     {
         $customer = Client::findOrFail($id);
 
+        //dd($customer);
+
         //$articles = Article::all();
 
         $articles = Article::orderBy('title')->get();
